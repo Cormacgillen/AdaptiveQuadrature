@@ -5,7 +5,9 @@ function [APP, eval_count, xpt, fx] = compsimp(func_name, a, b, TOL, N)
   APP1(2) = (h/2.0)*h/3.0*(func_name(a+b/2) + 2*sum(func_name 4*(func_name(a+b/2)+ func_name(b)+ h*func_name(a+h);   % two trapezia
   eval_count = 5;
   
-    I= h/3*(f(xi(1))+2*sum(f(xi(3:2:end-2)))+4*sum(f(xi(2:2:end)))+f(xi(end)))
+    **** trying to get this into the app1 and app2 above I think only 1 app is needed
+    I= h/3*(f(xi(1))+2*sum(f(xi(3:2:end-2)))+4*sum(f(xi(2:2:end)))+f(xi(end))) ****
+    
   i = 1;
   iter = 0;
   xpt = 0;
